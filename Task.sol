@@ -1,8 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity 0.8.7;
 
-import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-import "./Lending.sol";
+import "interface/IERC20.sol";
 import "./interface/IUniswapV2Factory.sol";
 import "./interface/IUniswapV2Pair.sol";
 import "./interface/IUniswapV2Router.sol";
@@ -37,7 +36,6 @@ contract StakingContract {
 
  
     mapping(address => Stake) public stakes;
-    // MyToken tt;
 
     constructor() {
         owner = msg.sender;
